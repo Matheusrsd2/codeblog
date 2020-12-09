@@ -17,16 +17,19 @@ public class CodeblogService implements ICodeblogService {
 
     @Override
     public List<Post> findAll() {
+
         return repository.findAll();
     }
 
     @Override
     public Post findById(long id) {
+
         return repository.findById(id).get();
     }
 
     @Override
     public void save(Post post) {
+
         repository.save(post);
     }
 }
